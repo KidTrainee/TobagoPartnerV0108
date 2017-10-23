@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_homepage"
+            android:icon="@drawable/icon_home"
+            android:title="@string/main_activity" />
+        <item
+            android:id="@+id/nav_qr_code_scan"
+            android:icon="@drawable/icon_qr_code_scan"
+            android:title="@string/qr_code_scan" />
+        <item
+            android:id="@+id/nav_enter_code"
+            android:icon="@drawable/icon_qr_code_search"
+            android:title="@string/enter_code_activity" />
+
+        <item
+            android:id="@+id/nav_account_info"
+            android:icon="@drawable/icon_account"
+            android:title="@string/account_activity" />
+
+        <item
+            android:id="@+id/nav_sale_history"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="@string/sale_history" />
+    </group>
+
+    <item android:title="@string/other">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/contact" />
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/icon_logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="city_array">
+        <item>Thành Phố</item>
+        <item>Hà Nội</item>
+        <item>Hồ Chí Minh</item>
+        <item>Đà Nẵng</item>
+        <item>Vũng Tàu</item>
+        <item>Nghệ An</item>
+        <item>Hải Phòng</item>
+    </string-array>
+
+    <string-array name="shop_status_array">
+        <item>Trạng thái</item>
+        <item>Shop Online</item>
+        <item>Shop Offline</item>
+    </string-array>
+
+    <string-array name="name_title_array">
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Ms.</item>
+    </string-array>
+    
+</resources>

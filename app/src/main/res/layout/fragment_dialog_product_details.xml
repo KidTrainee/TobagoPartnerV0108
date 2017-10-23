@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="400dp"
+    android:minWidth="300dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="Tổng tiền: 888.888 VNĐ" />
+
+        <TextView
+            android:id="@+id/fragment_dialog_product_details_textView_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="Xong"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:divider="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:showDividers="middle">
+
+            <TextView
+                style="@style/TableHeader"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight="3"
+                android:text="@string/product_name" />
+
+            <TextView
+                style="@style/TableHeader"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="@string/product_number" />
+
+            <TextView
+                style="@style/TableHeader"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:text="@string/percent_product_cashback_customer" />
+
+            <TextView
+                style="@style/TableHeader"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:text="@string/percent_product_cashback_tobago" />
+
+            <TextView
+                style="@style/TableHeader"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:text="Giá  (VNĐ)" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_dialog_product_details_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

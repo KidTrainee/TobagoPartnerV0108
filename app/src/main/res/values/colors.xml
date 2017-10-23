@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#336105</color>
+    <color name="colorPrimary">#428004</color>
+    <color name="colorPrimary50">#F1F8E9</color>
+    <color name="colorPrimary800">#558B2F</color>
+    <color name="colorPrimary900">#33691E</color>
+    <color name="colorPrimary100">#DCEDC8</color>
+    <color name="colorAccent">#8BC34A</color>
+    <color name="colorBlue">#28c4ea</color>
+    <color name="colorBlueDark">#2196F3</color>
+    <color name="colorFacebook">#3b5998</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorBlackTransparent60">#60000000</color>
+    <color name="colorBlackTransparent40">#40000000</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorBlack80">#80000000</color>
+    <color name="colorGreen">#64DD17</color>
+    <color name="colorRed">#C62828</color>
+    <color name="colorGray400">#BDBDBD</color>
+    <color name="colorGray500">#9E9E9E</color>
+    <color name="colorWhiteTransparent25">#25FFFFFF</color>
+    <color name="colorGray400Transparent35">#35BDBDBD</color>
+    <color name="colorOrange">#F57C00</color>
+</resources>

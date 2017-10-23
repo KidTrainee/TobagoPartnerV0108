@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CreateQrCodeActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary50"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_border_white"
+            android:id="@+id/activity_create_code_iv_qr_image"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/activity_create_code_textInputLayout_moneyAmount"
+            android:layout_width="match_parent"
+            android:background="@drawable/round_border_white"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/hint_enter_code"
+                android:imeOptions="flagForceAscii"
+                android:inputType="number"
+                android:background="@drawable/round_border_white"
+                android:padding="8dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/content_enter_user_id_button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_border_white"
+            android:padding="8dp"
+            android:text="@string/enter_code_activity"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

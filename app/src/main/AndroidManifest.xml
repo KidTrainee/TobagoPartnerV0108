@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onedrive.tobagopartnerv0108">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name="com.onedrive.tobagopartnerv0108.infrastructure.TobagoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_tobago_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="com.onedrive.tobagopartnerv0108.activities.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.onedrive.tobagopartnerv0108.login.LoginActivity"
+            android:label="@string/login_activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.onedrive.tobagopartnerv0108.login.ForgetPasswordActivity"
+            android:parentActivityName="com.onedrive.tobagopartnerv0108.login.LoginActivity"
+            android:label="@string/forget_password_activity_title"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.onedrive.tobagopartnerv0108.login.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.onedrive.tobagopartnerv0108.login.ConfirmPasswordActivity"
+            android:parentActivityName="com.onedrive.tobagopartnerv0108.login.LoginActivity"
+            android:label="@string/forget_password_activity_title"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.onedrive.tobagopartnerv0108.login.LoginActivity" />
+        </activity>
+
+        <activity android:name="com.onedrive.tobagopartnerv0108.login.WelcomeActivity" />
+        <activity
+            android:name="com.onedrive.tobagopartnerv0108.activities.UserInfoActivity"
+            android:label="@string/user_info_activity"
+            android:parentActivityName="com.onedrive.tobagopartnerv0108.activities.AccountActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.onedrive.tobagopartnerv0108.activities.AccountActivity" />
+
+        </activity>
+        <activity
+            android:name="com.onedrive.tobagopartnerv0108.activities.SaleHistoryActivity"
+            android:label="@string/sale_history"
+            android:parentActivityName="com.onedrive.tobagopartnerv0108.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.onedrive.tobagopartnerv0108.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.onedrive.tobagopartnerv0108.activities.OrderDetailActivity"
+            android:label="@string/don_hang_details"
+            android:parentActivityName="com.onedrive.tobagopartnerv0108.activities.SaleHistoryActivity">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.onedrive.tobagopartnerv0108.activities.SaleHistoryActivity" />
+        </activity>
+        <activity
+            android:name="com.onedrive.tobagopartnerv0108.activities.QRCodeScanActivity"
+            android:label="@string/qr_code_scan"
+            android:parentActivityName="com.onedrive.tobagopartnerv0108.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.onedrive.tobagopartnerv0108.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.onedrive.tobagopartnerv0108.activities.CreateQrCodeActivity"
+            android:label="@string/enter_code_activity"
+            android:parentActivityName="com.onedrive.tobagopartnerv0108.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.onedrive.tobagopartnerv0108.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.onedrive.tobagopartnerv0108.activities.AccountActivity"
+            android:label="@string/account_activity"
+            android:parentActivityName="com.onedrive.tobagopartnerv0108.activities.MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.onedrive.tobagopartnerv0108.activities.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

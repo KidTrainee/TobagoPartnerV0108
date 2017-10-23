@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorWhite">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/activity_user_info_circleImageView_avatar"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/avt" />
+
+                    <TextView
+                        android:id="@+id/activity_user_info_textView_userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/activity_user_info_circleImageView_avatar"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toEndOf="@id/activity_user_info_circleImageView_avatar"
+                        android:layout_toRightOf="@+id/activity_user_info_circleImageView_avatar"
+                        android:text="@string/default_userName"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/activity_user_info_textView_idText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/activity_user_info_circleImageView_avatar"
+                        android:layout_below="@+id/activity_user_info_textView_userName"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toEndOf="@+id/activity_user_info_circleImageView_avatar"
+                        android:layout_toRightOf="@+id/activity_user_info_circleImageView_avatar"
+                        android:text="@string/text_customer_id" />
+
+                    <TextView
+                        android:id="@+id/content_user_info_textView_userId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/activity_user_info_textView_idText"
+                        android:layout_alignTop="@+id/activity_user_info_textView_idText"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toEndOf="@+id/activity_user_info_textView_idText"
+                        android:layout_toRightOf="@+id/activity_user_info_textView_idText"
+                        android:text="@string/default_customer_id" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/c">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardBackgroundColor="@color/colorWhite">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="?android:attr/listDivider"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/content_user_info_linearLayout_store_info_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorGray400Transparent35"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:orientation="horizontal"
+                                android:padding="10dp"
+                                android:layout_marginBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/textView6"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:text="@string/text_shop_info"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="1"
+                                        android:padding="8dp"
+                                        android:text="@string/text_store_status" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="2"
+                                        android:padding="8dp"
+                                        android:text="@string/default_store_status" />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="1"
+                                        android:padding="8dp"
+                                        android:text="@string/text_store_city" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="2"
+                                        android:padding="8dp"
+                                        android:text="@string/default_store_city" />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="1"
+                                        android:padding="8dp"
+                                        android:text="@string/text_store_address" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="2"
+                                        android:padding="8dp"
+                                        android:text="@string/default_store_location" />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="1"
+                                        android:padding="8dp"
+                                        android:text="@string/text_tax_code" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="2"
+                                        android:padding="8dp"
+                                        android:text="@string/default_tax_code" />
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <LinearLayout
+                                android:id="@+id/activity_user_info_linearLayout_personal_info_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorGray400Transparent35"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:text="@string/text_user_info"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/ic_navigate_next_48dp" />
+                            </LinearLayout>
+
+                            <com.onedrive.tobagopartnerv0108.utils.expandable_layout.ExpandableLinearLayout
+                                android:id="@+id/content_user_info_expandableLinearLayout_personal_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TableRow android:padding="8dp">
+
+                                        <TextView
+                                            android:layout_column="1"
+                                            android:text="@string/text_birthday" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_column="2"
+                                            android:text="08/08/8888" />
+
+                                    </TableRow>
+
+                                    <TableRow android:padding="8dp">
+
+                                        <TextView
+                                            android:id="@+id/textView2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_column="1"
+                                            android:text="Giới tính:" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_column="2"
+                                            android:text="Nam" />
+
+                                    </TableRow>
+
+                                    <TableRow android:padding="8dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_column="1"
+                                            android:text="Email:" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_column="2"
+                                            android:text="@string/default_email" />
+                                    </TableRow>
+
+                                    <TableRow android:padding="8dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_column="1"
+                                            android:paddingEnd="4dp"
+                                            android:paddingLeft="4dp"
+                                            android:paddingRight="4dp"
+                                            android:paddingStart="4dp"
+                                            android:text="@string/text_phone" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/default_phone_number" />
+                                    </TableRow>
+
+                                </TableLayout>
+
+                            </com.onedrive.tobagopartnerv0108.utils.expandable_layout.ExpandableLinearLayout>
+
+                            <TextView
+                                android:id="@+id/activity_account_info_textView_changeInfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:padding="16dp"
+                                android:text="@string/activity_account_info_textView_change_password"
+                                android:textColor="@color/colorPrimary" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/activity_account_info_cardView_change_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/icon_change_password" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:text="@string/chanp"
+                                android:textColor="@color/colorBlack" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_navigate_next_48dp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <include layout="@layout/include_history_brief" />
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+

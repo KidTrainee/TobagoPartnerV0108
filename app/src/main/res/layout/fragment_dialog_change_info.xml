@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="350dp"
+    android:minWidth="350dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginHorizontal"
+        android:layout_marginStart="@dimen/marginHorizontal"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/include_store_info_title"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:paddingTop="8dp"
+            android:text="@string/store_info_title"
+            android:textStyle="italic|bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGray400" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_view_40dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/appCompatSpinner2"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/shop_status_array"
+                android:focusable="true">
+
+                <requestFocus />
+            </android.support.v7.widget.AppCompatSpinner>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/appCompatSpinner"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:entries="@array/city_array"
+                android:focusable="true"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/marginHorizontal"
+            android:layout_marginStart="@dimen/marginHorizontal"
+            android:layout_marginTop="4dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/fragment_dialog_change_info_textInputEditText_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_store_location"
+                android:inputType="text"
+                android:maxLines="3"
+                android:nextFocusDown="@+id/fragment_dialog_change_info_editText_name"
+                android:text="@string/default_store_location" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/fragment_dialog_change_info_title"
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:paddingTop="8dp"
+            android:text="@string/personal_info_title"
+            android:textStyle="italic|bold" />
+
+        <View
+            style="@android:style/Widget.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorGray400" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/marginHorizontal"
+            android:layout_marginStart="@dimen/marginHorizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/fragment_dialog_change_info_spinner_nameTitle"
+                    style="@android:style/Widget.Holo.Light.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:entries="@array/name_title_array"
+                    android:focusable="true"
+                    android:nextFocusRight="@+id/fragment_dialog_change_info_editText_name" />
+
+                <EditText
+                    android:id="@+id/fragment_dialog_change_info_editText_name"
+                    style="@android:style/Widget.Holo.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_userName"
+                    android:inputType="textPersonName"
+                    android:text="@string/default_userName" />
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/fragment_dialog_change_info_textInputLayout_birthday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignEnd="@+id/view_alignment"
+                    android:layout_alignRight="@+id/view_alignment"
+                    android:layout_marginTop="8dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_dialog_change_info_textInputEditText_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_birthday"
+                        android:inputType="date"
+                        android:maxLines="3"
+                        android:layout_weight="1"
+                        android:text="@string/default_birthday" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:id="@+id/view_alignment"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/fragment_dialog_change_info_textInputLayout_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignStart="@+id/view_alignment"
+                    android:layout_alignLeft="@+id/view_alignment">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_dialog_change_info_textInputEditText_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_phone_number"
+                        android:inputType="phone"
+                        android:maxLines="3"
+                        android:text="@string/default_phone_number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_dialog_change_info_textInputLayout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="3"
+                    android:text="@string/default_email" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/fragment_dialog_change_info_button_done"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/button_done"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/fragment_dialog_change_info_button_cancel"
+                style="?attr/buttonBarNegativeButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/button_cancel"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

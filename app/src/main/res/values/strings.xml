@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">TobagoManufacturer</string>
+
+    <string name="title_home">Trang chủ</string>
+    <string name="title_trade">Giao dịch</string>
+    <string name="title_sale">Ưu đãi</string>
+    <string name="title_acount">Tài khoản</string>
+    <string name="hint_login">Số điện thoại</string>
+    <string name="pas">Mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="text_register_guide">Chưa có tài khoản Tobago. Đăng ký tại tobago.com.vn</string>
+    <string name="chanp">Đổi mật khẩu</string>
+    <string name="activity_account_info_textView_change_password">Sửa thông tin</string>
+    <string name="contact">Liên hệ với chúng tôi</string>
+    <string name="forget">Quên mật khẩu</string>
+    <string name="total_order">Tổng số đơn hàng</string>
+    <string name="total_order_fail">Số đơn hàng đã hủy</string>
+    <string name="total_success_order">Số đơn hàng thành công</string>
+    <string name="total_order_pending">Số đơn hàng đang chờ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hint_phone_number">Số điện thoại</string>
+    <string name="login_password_hint">Mật khẩu</string>
+    <string name="login_confirmPassword_hint">Xác nhận Mật khẩu</string>
+    <string name="login_button_register">Đăng ký</string>
+    <string name="login_button_register_facebook">Đăng ký với facebook</string>
+    <string name="login_forgot_password">Quên Mật khẩu?</string>
+    <string name="enter_registering_phone_number">Nhập số điện thoại đăng ký</string>
+    <string name="send_me">Gửi Thông Tin</string>
+    <string name="hint_edt_confirm_code">Nhập Mã Xác Nhận</string>
+
+    <!-- menu_action -->
+    <string name="action_settings">Settings</string>
+    <string name="navigation_drawer_open">Navigation Drawer Open</string>
+    <string name="navigation_drawer_close">Navigation Drawer Close</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="hint_enter_code">Nhập Số tiền Giao dịch</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="resend_confirm_code">Gửi lại mã!</string>
+
+    <!-- Tên activity -->
+
+    <string name="don_hang_details">Chi tiết đơn hàng</string>
+    <string name="sodu">Số dư:</string>
+    <string name="account_info">Chi tiết tài khoản</string>
+    <string name="help">Trợ giúp</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="user_info_activity">Chi tiết</string>
+    <string name="content_main_latest_order">Giao dịch gần đây</string>
+    <string name="chitiet_lichsu_giaodich">Xem thêm...</string>
+    <string name="text_order_info_title">Thông tin đơn hàng</string>
+    <string name="order_id">Mã phiếu thu:</string>
+    <string name="button_confirm">Xác nhận</string>
+    <string name="sale_history">Lịch sử Giao dịch</string>
+    <string name="qr_code_scan">Quét mã QR Code</string>
+    <string name="enter_code_activity">Tạo mã</string>
+    <string name="account_activity">Tài khoản</string>
+    <string name="action_search">Tìm kiếm</string>
+    <string name="product_list">Danh mục sản phẩm</string>
+    <string name="qr_code_dialog_title">Mã QR của đơn hàng</string>
+    <string name="action_refresh_data">Cập nhật dữ liệu đơn hàng</string>
+    <string name="action_navigating_website">Đến website</string>
+    <string name="lodin_external">Hoặc đăng nhập bằng</string>
+    <string name="login_birth_date">Ngày sinh</string>
+    <string name="old_password">Mật khẩu cũ</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="button_done">Xong</string>
+    <string name="button_cancel">Hủy</string>
+    <string name="change_info">Sửa thông tin</string>
+    <string name="birth_date">Ngày sinh:</string>
+    <string name="gender">Giới tính:</string>
+    <string name="address">Địa chỉ:</string>
+    <string name="hint_userName">Họ Tên</string>
+    <string name="back_to_login">Đã có tài khoản. Đăng nhập!</string>
+    <string name="hint_store_location">Địa chỉ cửa hàng</string>
+    <string name="hint_birthday">Ngày sinh</string>
+    <string name="hint_home_address">Địa chỉ nhà</string>
+    <string name="imageView_birthday_icon">Birthday Icon</string>
+    <string name="imageView_home_icon">Home Icon</string>
+    <string name="personal_info_title">Thông tin cá nhân</string>
+    <string name="register_agreement_text">Tôi đã đọc và hiểu rõ các điều khoản và chính sách bảo mật của Tobago.</string>
+    <string name="text_external_register">Hoặc đăng ký bằng</string>
+    <string name="icon_store_location">Store Location Icon</string>
+    <string name="icon_phone">Phone Icon</string>
+    <string name="icon_email">Email Icon</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_tax_number">Mã Số Thuế</string>
+    <string name="text_change_avatar">Cập nhật ảnh đại diện</string>
+    <string name="login_activity">Đăng nhập</string>
+    <string name="registration_activity_title">Đăng ký Đối tác Tobago</string>
+    <string name="forget_password_activity_title">Quên mật khẩu</string>
+    <string name="tobago_icon">Tobago Icon</string>
+    <string name="create_shop_title">Tạo shop bán hàng</string>
+    <string name="text_registration_guide">Gần xong rồi. Giờ bạn hãy tạo một cửa hàng tại Tobago.</string>
+
+    <!-- Default Info -->
+    <string name="default_userName">Lê Minh</string>
+    <string name="default_phone_number">01688886688</string>
+    <string name="default_store_location">365A Hoàng Quốc Việt</string>
+    <string name="default_email">bieber@gmail.com</string>
+    <string name="default_payment_method">Credit Card</string>
+    <string name="default_birthday">08/08/8888</string>
+    <string name="default_home_address">P2848 chung cư Kim Văn Kim Lũ</string>
+
+    <!-- Title -->
+    <string name="store_name">Tên cửa hàng:</string>
+    <string name="hint_search_order">Tìm Đơn Hàng</string>
+    <string name="hint_qr_scan">Quét Mã</string>
+    <string name="text_order_cashback_tobago">Tổng tiền hoàn: </string>
+    <string name="text_order_id">Mã phiếu thu:</string>
+    <string name="text_order_time">Thời gian giao dịch:</string>
+    <string name="text_order_value">Giá trị đơn hàng:</string>
+    <string name="text_order_status">Trạng thái:</string>
+    <string name="text_order_products">Danh mục sản phẩm</string>
+    <string name="text_qr_code">QR Code</string>
+
+
+    <string name="link_to_site">
+        <a href="http://www.google.com">điều khoản và chính sách bảo mật</a>
+    </string>
+    <string name="default_price">888.888 VND</string>
+    <string name="text_qr_code_scan_guide">Đặt hình ảnh QR code khớp với khung hình để scan</string>
+    <string name="text_customer_id">Id:</string>
+    <string name="default_customer_id">183278</string>
+    <string name="text_shop_info">Thông tin cửa hàng</string>
+    <string name="text_store_city">Khu vực:</string>
+    <string name="default_store_city">Hà Nội</string>
+    <string name="text_store_status">Trạng thái:</string>
+    <string name="default_store_status">Shop Online</string>
+    <string name="text_tax_code">Mã số thuế:</string>
+    <string name="default_tax_code">3603043915</string>
+    <string name="text_store_address">Địa chỉ:</string>
+    <string name="text_user_info">Thông tin cá nhân</string>
+    <string name="text_birthday">Ngày sinh:</string>
+    <string name="text_phone">Số điện thoại:</string>
+    <string name="store_info_title">Thông tin cửa hàng</string>
+    <string name="main_activity">Trang chủ</string>
+    <string name="other">Khác</string>
+    <string name="check_wifi_request">Không có kết nối Internet. Kiểm tra WIFI.</string>
+    <string name="agree">Đồng ý</string>
+    <string name="exit">Thoát</string>
+    <string name="wrong_info">Sai số điện thoại hoặc mật khẩu</string>
+    <string name="missing_data">Nhập thiếu thông tin</string>
+    <string name="login_success">Đăng nhập thành công</string>
+    <string name="camera_permission_rationale">Cần quyền truy cập camera của thiết bị.</string>
+    <string name="goto_website">Đến website</string>
+    <string name="action_call">Gọi đường dây nóng...</string>
+    <string name="contact_consultant">Liên hệ tư vấn khách hàng</string>
+    <string name="linkSendCodePass">http://tobago.webmantan.com/sendCodePassManufaturerAPI</string>
+    <string name="check_mail_to_get_new_pass">Mật khẩu mới đã được gửi về email đăng ký. Kiểm tra email để lấy mật khẩu.</string>
+    <string name="check_mail_to_get_code">Một mã xác nhận đã được gửi tới địa chỉ mail đăng ký.</string>
+    <string name="error_send_code_pass">Có lỗi xảy ra trong quá trình.</string>
+    <string name="missing_confirm_code">Nhập mã xác nhận</string>
+    <string name="linkSendPass" >http://tobago.webmantan.com/sendPassManufaturerAPI</string>
+    <string name="error_send_pass">Lỗi xảy ra trong quá trình xác minh tài khoản.</string>
+    <string name="send_pass_success">Mật khẩu mới đã được gửi về email đăng ký. Xin cảm ơn!</string>
+    <string name="error_missing_phone">Nhập số điện thoại</string>
+
+    <string name="progress_dialog_loading">Đang tải dữ liệu...</string>
+    <string name="not_support">Không hỗ trợ! Bảo Trang xem lại code PHP đi!</string>
+    <string name="error_code_order">Không tìm thấy đơn hàng</string>
+    <string name="do_logout">Đăng xuất khỏi phiên làm việc.</string>
+    <string name="percent_product_cashback_customer">% Hoàn KH</string>
+    <string name="percent_product_cashback_tobago">% Hoàn Tobago</string>
+    <string name="product_name">Tên sản phẩm</string>
+    <string name="product_number">Số lượng</string>
+    <string name="error_missing_oldPass">Nhập mật khẩu cũ!</string>
+    <string name="error_missing_newPass">Nhập mật khẩu mới!</string>
+    <string name="error_password_not_match">Mật khẩu xác nhận không đúng.</string>
+    <string name="change_password_success">Đổi mật khẩu thành công!</string>
+    <string name="invalid_access_token">Phiên làm việc bị gián đoạn. Xin hãy đăng nhập lại!</string>
+    <string name="error_old_pass_not_match">Mật khẩu cũ không đúng!</string>
+    <string name="error_short_password">Mật khẩu mới phải dài hơn 6 ký tự!</string>
+    <string name="error_missing_money_amount">Nhập số tiền giao dịch!</string>
+    <string name="creating_qr_code">Đang tạo QR Code</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/list_item_orderCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NH-379"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền: 888.888 VNĐ"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/list_item_orderCode"/>
+
+        <TextView
+            android:id="@+id/list_item_orderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đang chờ"
+            android:textColor="@color/colorGreen"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/list_item_orderTime"/>
+
+        <TextView
+            android:id="@+id/list_item_orderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24/05/2017 13:40"
+            android:layout_below="@+id/list_item_orderCode"
+            android:textStyle="italic"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
